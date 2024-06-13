@@ -141,7 +141,7 @@ def get_raw_data():
                     if pop == '爆':
                         pop = 100
                     elif pop == 'XX':
-                        pop = -20
+                        pop = -100
                     elif pop.startswith('X'):
                         pop = -int(pop[1:])
                     elif pop == '':
@@ -184,7 +184,7 @@ def get_raw_data():
                         continue
 
                     # 日期是102跳出迴圈
-                    if date == 600:
+                    if date == 601:
                         break
 
                     print(f"{title} {pop} {author} {date} {current_index_num}")
